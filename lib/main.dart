@@ -13,17 +13,34 @@ class BusinessCard extends StatelessWidget {
         home: Scaffold(
           backgroundColor: Colors.teal,
           body: SafeArea(
-            child: Container(
-              child: const Text("Hello World"),
-              color: Colors.white,
-              width: 100,
-              height: 100,
-              //margin: EdgeInsets.all(30),
-              //margin: EdgeInsets.symmetric(
-              //  vertical: 10,
-              //  horizontal: 50,
-              //),
-              margin: EdgeInsets.fromLTRB(30, 10, 20, 50),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Container(
+                  color: Colors.red,
+                  width: 100,
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      color: Colors.yellow,
+                      width: 100,
+                      height: 100,
+                      alignment: Alignment.center,
+                    ),Container(
+                      color: Colors.green,
+                      width: 100,
+                      height: 100,
+                      alignment: Alignment.center,
+                    ),
+                  ],
+                ),
+                Container(
+                  color: Colors.blue,
+                  width: 100,
+                ),
+              ],
             ),
           ),
         )
